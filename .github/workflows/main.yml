@@ -14,7 +14,7 @@ jobs:
       copy-platform-config: false
       login-to-docker: false
       expose-github-runtime: false
-      create-npmrc: fasle
+      create-npmrc: false
       create-ion-analytics-npmrc: false
       create-jfrog-npmrc: false
       setup-node: false
