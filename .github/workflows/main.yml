@@ -1,0 +1,22 @@
+name: main
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    uses: mergermarket/trendy-workflow-actions/.github/workflows/build.yml@main
+    with:
+      setup-node-version: 18
+      setup-cdflow2: false
+      notify-teams-on-build-exit: false
+      configure-aws-region: false
+      copy-platform-config: false
+      login-to-docker: false
+      expose-github-runtime: false
+      create-npmrc: fasle
+      create-ion-analytics-npmrc: false
+      create-jfrog-npmrc: false
+      setup-node: false
+      copy-platform-config-download-list-json: '[]'
+      build-commands-json: '["echo hello"]'       
