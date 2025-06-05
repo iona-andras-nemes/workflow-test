@@ -1,7 +1,6 @@
 name: main2
 on:
   workflow_dispatch:
-  push:
 
 jobs:
   build:
