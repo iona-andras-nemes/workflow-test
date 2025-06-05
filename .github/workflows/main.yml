@@ -19,4 +19,11 @@ jobs:
       create-jfrog-npmrc: false
       setup-node: false
       copy-platform-config-download-list-json: '[]'
-      build-commands-json: '["echo hello"]'       
+      build-commands-json: '["echo hello"]'           
+    secrets:
+      MSTEAMS_WEBHOOK: ''
+      AWS_ACCESS_KEY_ID: ''
+      AWS_SECRET_ACCESS_KEY: ''
+      NPM_ACCESS_TOKEN: ''
+      DOCKER_PASSWORD: ''
+      DOCKER_USERNAME: ''
