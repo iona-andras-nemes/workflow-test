@@ -1,0 +1,32 @@
+name: main2
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    uses: iona-andras-nemes/reusable-workflows/.github/workflows/build.yml@master
+    with:
+      setup-node-version: 18
+      setup-cdflow2: false
+      notify-teams-on-build-exit: false
+      configure-aws-region: false
+      copy-platform-config: false
+      login-to-docker: false
+      expose-github-runtime: false
+      create-npmrc: false
+      create-ion-analytics-npmrc: false
+      create-jfrog-npmrc: false
+      setup-node: false
+      copy-platform-config-download-list-json: '[]'
+      build-commands-json: '["echo hello"]'
+      runs-on: ubuntu-22.04
+      runs-on-extra-tag1: linux
+      runs-on-extra-tag2: x64
+    secrets:
+      MSTEAMS_WEBHOOK: ''
+      AWS_ACCESS_KEY_ID: ''
+      AWS_SECRET_ACCESS_KEY: ''
+      NPM_ACCESS_TOKEN: ''
+      DOCKER_PASSWORD: ''
+      DOCKER_USERNAME: ''
