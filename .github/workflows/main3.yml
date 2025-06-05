@@ -1,4 +1,4 @@
-name: main2
+name: main3
 on:
   workflow_dispatch:
   push:
