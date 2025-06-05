@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    uses: iona-andras-nemes/reusable-workflows/.github/workflows/build.yml@main
+    uses: iona-andras-nemes/reusable-workflows/.github/workflows/build.yml@master
     with:
       setup-node-version: 18
       setup-cdflow2: false
