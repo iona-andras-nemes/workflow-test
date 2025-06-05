@@ -19,9 +19,6 @@ jobs:
       setup-node: false
       copy-platform-config-download-list-json: '[]'
       build-commands-json: '["echo hello"]'
-      runs-on: ubuntu-22.04
-      runs-on-extra-tag1: linux
-      runs-on-extra-tag2: x64
       runs-on-json: '["ubuntu-22.04", "linux", "x64"]'
     secrets:
       MSTEAMS_WEBHOOK: ''
